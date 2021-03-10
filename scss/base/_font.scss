@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('/assets/font/Quicksand-Bold.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@mixin font-Quicksand-Bold {
+    font-family: 'Quicksand-Bold', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('/assets/font/Quicksand-Medium.ttf');
+    font-style: normal;
+    font-display: swap;
+}
+@mixin font-Quicksand-Medium {
+    font-family: 'Quicksand-Medium', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'MonstroSolid';
+    src: url('/assets/font/UNIMonstroSolid.ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@mixin font-MonstroSolid {
+    font-family: 'MonstroSolid', Arial, Helvetica, sans-serif;
+}

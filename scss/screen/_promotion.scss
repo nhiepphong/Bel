@@ -1,0 +1,208 @@
+.promotion{
+    background: url(/assets/image/pr-bg.jpg) repeat-y top center/ 100% auto;
+    &__header{
+        display: flex;
+        padding: 0.2rem 0.4rem;
+        justify-content: space-between;
+        align-items: center;
+        background:url(/assets/image/header-bg1.svg) repeat-x top center/0.7rem auto,url(/assets/image/header-bg2.svg) repeat-x bottom center/0.16rem auto,white;
+        &-back{
+            @include PC{
+                width: percentage(355/1920);
+            }
+            @include SP{
+                width:25%;
+            }
+        }
+        &-logo{
+            @include PC{
+                width: percentage(192/1920);
+            }
+            @include SP{
+                width:20%;
+            }
+        }
+        &-facebook{
+            @include PC{
+                width: percentage(355/1920);
+            }
+            @include SP{
+                width:25%;
+            }
+        }
+    }
+    &-kv{
+      
+    }
+    &__body{
+        margin-top: -2px;
+        position: relative;
+        z-index: 2;
+        @include SP{
+            padding:0.5rem 0.8rem;
+        }
+        @include PC{
+            padding: 1rem 1.2rem;
+        }
+        &-heading{
+            @include font-MonstroSolid;
+            color: white;
+            font-size: 5vw;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        &-inner{
+            @include font-Quicksand-Medium;
+            color: #020202;
+            line-height: 1.5;
+            background: url(/assets/image/paper-bg.png) repeat-y top center/ 100% auto;
+            box-shadow: 4px 10px 20px rgba(#020202,0.8);
+            @include PC{
+                padding: 1px 1.6rem 2rem;
+                font-size: 21px;
+            }
+            @include SP{
+                padding: 1px 0.6rem 1rem;
+                font-size: 0.2rem;
+            }
+            ul{
+                li{
+                    padding-left: 0.8em;
+                    position: relative;
+                    &:before{
+                        content:'-';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        
+                    }
+                    ul{
+                        li{
+                            padding-left: 0.8em;
+                            position: relative;
+                            &:before{
+                                content:'+';
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            img{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                @include SP{
+                    width: 50%;
+                }
+                &.full-img{
+                    width: 100%
+                }
+            }
+        }
+        &-title{
+            @include font-MonstroSolid;
+            color: #ed2024;
+            text-align: center;
+            position: relative;
+            padding-bottom: 0.5rem;
+            @include PC{
+                font-size: 3vw;
+                margin-top: 1rem;
+            }
+            @include SP{
+                font-size: 5vw;
+                margin-top: 0.5rem;
+            }
+            &::after{
+                content:'- - - - - - - -';
+                @include font-MonstroSolid;
+                color: #1c4f9e;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+            }
+        }
+        &-subtitle{
+            @include font-MonstroSolid;
+            color: #ed2024;
+            position: relative;
+            
+            @include PC{
+                font-size: 1.5vw;
+                margin-top: 0.5rem;
+                text-align: center;
+                padding-bottom: 0.5rem;
+            }
+            @include SP{
+                font-size:4vw;
+                margin-top: 0.1rem;
+                padding-bottom: 0.2rem;
+            }
+        }
+    }
+    &__footer{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        &-flag{
+            justify-self: center;
+            margin-left: auto;
+            margin-right: auto;
+            @include PC{
+                width:40%;
+            }
+            @include SP{
+                width: 50%;
+            }
+        }
+        &-cow{
+            @include PC{
+                width: percentage(240/1920);
+            }
+            @include SP{
+                width: 25%;
+            }
+        }
+        &-bel{
+            margin-bottom: 10px;
+            @include PC{
+                width: percentage(150/1920);
+            }
+            @include SP{
+                width: 12%;
+            }
+        }
+        &-diamond{
+            margin-top: auto;
+            align-self: flex-end;
+            @include PC{
+                width: percentage(300/1920);
+            }
+            @include SP{
+                width: 20%;
+            }
+        }
+    }
+    
+}
+.totop{
+    position: fixed;
+    right: 0.1rem;
+    bottom: 1.5rem;
+    display: block;
+    z-index: 999;
+    @include PC{
+        width: 1rem;
+        height: 1rem;
+    }
+    @include SP{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+}

@@ -1,0 +1,15 @@
+.sp-only{
+    @include PC{
+        display: none!important;
+    }
+}
+.pc-only{
+    @include SP{
+        display: none!important;
+    }
+}
+.tac-pc{
+  @include PC{
+      text-align: center;
+  }  
+}
