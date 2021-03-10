@@ -1,11 +1,11 @@
 .promotion{
-    background: url(/assets/image/pr-bg.jpg) repeat-y top center/ 100% auto;
+    background: url(../image/pr-bg.jpg) repeat-y top center/ 100% auto;
     &__header{
         display: flex;
         padding: 0.2rem 0.4rem;
         justify-content: space-between;
         align-items: center;
-        background:url(/assets/image/header-bg1.svg) repeat-x top center/0.7rem auto,url(/assets/image/header-bg2.svg) repeat-x bottom center/0.16rem auto,white;
+        background:url(../image/header-bg1.svg) repeat-x top center/0.7rem auto,url(../image/header-bg2.svg) repeat-x bottom center/0.16rem auto,white;
         &-back{
             @include PC{
                 width: percentage(355/1920);
@@ -55,7 +55,7 @@
             @include font-Quicksand-Medium;
             color: #020202;
             line-height: 1.5;
-            background: url(/assets/image/paper-bg.png) repeat-y top center/ 100% auto;
+            background: url(../image/paper-bg.png) repeat-y top center/ 100% auto;
             box-shadow: 4px 10px 20px rgba(#020202,0.8);
             @include PC{
                 padding: 1px 1.6rem 2rem;

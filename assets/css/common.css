@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Quicksand-Bold';
-  src: url("/assets/font/Quicksand-Bold.ttf");
+  src: url("../font/Quicksand-Bold.ttf");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Quicksand-Medium';
-  src: url("/assets/font/Quicksand-Medium.ttf");
+  src: url("../font/Quicksand-Medium.ttf");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'MonstroSolid';
-  src: url("/assets/font/UNIMonstroSolid.ttf");
+  src: url("../font/UNIMonstroSolid.ttf");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -181,13 +181,13 @@ select::-ms-expand {
 
 @media only screen and (max-width: 1000px) {
   .landing-page {
-    background: url(/assets/image/lp-bg-sp.jpg) no-repeat center/cover;
+    background: url(../image/lp-bg-sp.jpg) no-repeat center/cover;
   }
 }
 
 @media print, (min-width: 1001px) {
   .landing-page {
-    background: url(/assets/image/lp-bg.jpg) no-repeat center/cover;
+    background: url(../image/lp-bg.jpg) no-repeat center/cover;
   }
 }
 
@@ -357,7 +357,7 @@ select::-ms-expand {
 }
 
 .promotion {
-  background: url(/assets/image/pr-bg.jpg) repeat-y top center/100% auto;
+  background: url(../image/pr-bg.jpg) repeat-y top center/100% auto;
 }
 
 .promotion__header {
@@ -371,7 +371,7 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/assets/image/header-bg1.svg) repeat-x top center/0.7rem auto, url(/assets/image/header-bg2.svg) repeat-x bottom center/0.16rem auto, white;
+  background: url(../image/header-bg1.svg) repeat-x top center/0.7rem auto, url(../image/header-bg2.svg) repeat-x bottom center/0.16rem auto, white;
 }
 
 @media print, (min-width: 1001px) {
@@ -440,7 +440,7 @@ select::-ms-expand {
   font-family: 'Quicksand-Medium', Arial, Helvetica, sans-serif;
   color: #020202;
   line-height: 1.5;
-  background: url(/assets/image/paper-bg.png) repeat-y top center/100% auto;
+  background: url(../image/paper-bg.png) repeat-y top center/100% auto;
   -webkit-box-shadow: 4px 10px 20px rgba(2, 2, 2, 0.8);
           box-shadow: 4px 10px 20px rgba(2, 2, 2, 0.8);
 }

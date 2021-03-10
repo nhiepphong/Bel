@@ -6,10 +6,10 @@
     flex-direction: column;
     justify-content: space-between;
     @include SP{
-        background: url(/assets/image/lp-bg-sp.jpg) no-repeat center/cover;
+        background: url(../image/lp-bg-sp.jpg) no-repeat center/cover;
     }
     @include PC{
-        background: url(/assets/image/lp-bg.jpg) no-repeat center/cover;
+        background: url(../image/lp-bg.jpg) no-repeat center/cover;
     }
     &__header{
         @include SP{
