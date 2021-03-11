@@ -5,36 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
+
     <link rel="stylesheet" href="assets/css/common.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
     <div class="landing-page">
         <div class="landing-page__header">
-            <a  class="landing-page__header-back" href="https://conbocuoi.com.vn/" target="_blank" >
+            <a  class="landing-page__header-back  wow fadeInLeft" href="https://conbocuoi.com.vn/" target="_blank"  >
                 <img src="assets/image/home-btn.svg" alt="back">
             </a>
-            <img class="landing-page__header-logo" src="assets/image/logo.png" alt="Vì đời thật đẹp khi ta cười">
-            <a href="https://www.facebook.com/conbocuoi.vn/" class="landing-page__header-facebook"  target="_blank" >
+            <img class="landing-page__header-logo wow fadeInUp" src="assets/image/logo.png" alt="Vì đời thật đẹp khi ta cười">
+            <a href="https://www.facebook.com/conbocuoi.vn/" class="landing-page__header-facebook wow fadeInRight"  target="_blank" >
                 <img src="assets/image/fb-btn.svg" alt="facebook">
             </a>
         </div>
-        <div class="landing-page__body">
+        <div class="landing-page__body  wow zoomIn" data-wow-delay="1s">
             <a href="promotion.html">
                 <img class="pc-only" src="assets/image/lp-banner.svg" alt="Chương trình khuyến mãi">
                 <img class="sp-only" src="assets/image/lp-banner-sp.png" alt="Chương trình khuyến mãi">
             </a>
         </div>
         <div class="landing-page__footer">
-            <img class="landing-page__footer-cow" src="assets/image/logo-cow.svg" alt="">
-            <div class="copyright">
+            <img class="landing-page__footer-cow wow fadeInLeft" src="assets/image/logo-cow.svg " alt="">
+            <div class="copyright wow fadeIn">
                 <p>CÔNG TY TNHH BEL VIỆT NAM</p>
                 <small>Địa chỉ: Lầu 9  -10 Harbour View Tower, 35 Nguyễn Huệ,<br/>
                     Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh<br/>
                     Email: customerservice-vn@group-bel.com</small>
             </div>
-            <img class="landing-page__footer-bel" src="assets/image/bel-logo.svg" alt="">
+            <img class="landing-page__footer-bel wow fadeInRight" src="assets/image/bel-logo.svg" alt="">
 
         </div>
     </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init(); 
+    </script>
 </body>
 </html>

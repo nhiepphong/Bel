@@ -217,6 +217,11 @@ select::-ms-expand {
 @media print, (min-width: 1001px) {
   .landing-page__header-back {
     width: 18.48958%;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .landing-page__header-back:hover {
+    opacity: 0.8;
   }
 }
 
@@ -244,6 +249,11 @@ select::-ms-expand {
 @media print, (min-width: 1001px) {
   .landing-page__header-facebook {
     width: 18.48958%;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .landing-page__header-facebook:hover {
+    opacity: 0.8;
   }
 }
 
@@ -276,6 +286,13 @@ select::-ms-expand {
 .landing-page__body img {
   max-height: 100%;
   width: auto;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.landing-page__body a:hover img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .landing-page__footer {
@@ -377,6 +394,11 @@ select::-ms-expand {
 @media print, (min-width: 1001px) {
   .promotion__header-back {
     width: 18.48958%;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .promotion__header-back:hover {
+    opacity: 0.8;
   }
 }
 
@@ -401,6 +423,11 @@ select::-ms-expand {
 @media print, (min-width: 1001px) {
   .promotion__header-facebook {
     width: 18.48958%;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .promotion__header-facebook:hover {
+    opacity: 0.8;
   }
 }
 
@@ -635,12 +662,18 @@ select::-ms-expand {
   bottom: 1.5rem;
   display: block;
   z-index: 999;
+  cursor: pointer;
 }
 
 @media print, (min-width: 1001px) {
   .totop {
     width: 1rem;
     height: 1rem;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+  .totop:hover {
+    opacity: 0.8;
   }
 }
 

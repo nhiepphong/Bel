@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promotion</title>
     <link rel="stylesheet" href="assets/css/common.min.css">
-
+    <link rel="stylesheet" href="assets/css/animate.css">
+   
 </head>
 <body>
     <div class="promotion">
-        <a class="totop" onClick="window.scrollTo(0,0)">
+        <a class="totop  wow fadeIn" data-wow-delay="5s" onClick="window.scrollTo(0,0)">
             <img src="assets/image/totop.png" alt="">
         </a>
         <div class="promotion__header">
-            <a href="https://conbocuoi.com.vn/" target="_blank"  class="promotion__header-back">
+            <a href="https://conbocuoi.com.vn/" target="_blank"  class="promotion__header-back wow fadeInLeft">
                 <img src="assets/image/pm-btn-back.svg" alt="back">
             </a>
-            <img class="promotion__header-logo" src="assets/image/logo-red.svg" alt="Vì đời thật đẹp khi ta cười">
-            <a href="https://www.facebook.com/conbocuoi.vn/" class="promotion__header-facebook"  target="_blank" >
+            <img class="promotion__header-logo wow fadeInUp" src="assets/image/logo-red.svg" alt="Vì đời thật đẹp khi ta cười">
+            <a href="https://www.facebook.com/conbocuoi.vn/" class="promotion__header-facebook wow fadeInRight" target="_blank" >
                 <img src="assets/image/fb-btn.svg" alt="facebook">
             </a>
         </div>
-        <div class="promotion__kv">
+        <div class="promotion__kv wow fadeIn" data-wow-delay="1s">
             <img class="pc-only" src="assets/image/kv-pc.jpg" alt="">
             <img class="sp-only" src="assets/image/kv-sp.jpg" alt="">
         </div>
         <div class="promotion__body">
-            <h2 class="promotion__body-heading">THÔNG TIN CHƯƠNG TRÌNH KHUYẾN MÃI</h2>
-            <div class="promotion__body-inner">
+            <h2 class="promotion__body-heading wow fadeInUp"  data-wow-delay="1.5s">THÔNG TIN CHƯƠNG TRÌNH KHUYẾN MÃI</h2>
+            <div class="promotion__body-inner wow fadeInUp">
                 <!-- thong tin chung -->
                 <h2 class="promotion__body-title">THÔNG TIN CHUNG</h2>
                 <p>
@@ -289,5 +290,11 @@
         </div>
 
     </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init(); 
+    </script>
 </body>
 </html>
