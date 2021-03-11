@@ -47,10 +47,10 @@
         position: relative;
         z-index: 2;
         @include SP{
-            padding:0.5rem 0.8rem;
+            padding:0.5rem 1rem 0.8rem;
         }
         @include PC{
-            padding: 1rem 1.2rem;
+            padding: 1rem 1.8rem 1.4rem;
         }
         &-heading{
             @include font-MonstroSolid;
@@ -177,12 +177,14 @@
             }
         }
         &-bel{
-            margin-bottom: 10px;
+            margin-bottom: 0.5rem;
+            margin-top:1rem;
             @include PC{
-                width: percentage(150/1920);
+                width: percentage(300/1920);
             }
             @include SP{
                 width: 12%;
+                margin-bottom: 10px;
             }
         }
         &-diamond{
