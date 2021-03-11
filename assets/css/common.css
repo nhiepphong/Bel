@@ -334,7 +334,7 @@ select::-ms-expand {
   }
 }
 
-.copyright {
+.landing-page__footer .copyright {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -344,22 +344,22 @@ select::-ms-expand {
 }
 
 @media print, (min-width: 1001px) {
-  .copyright {
+  .landing-page__footer .copyright {
     font-size: 19px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .copyright {
+  .landing-page__footer .copyright {
     font-size: 0.16rem;
   }
 }
 
-.copyright p {
+.landing-page__footer .copyright p {
   font-family: 'Quicksand-Bold', Arial, Helvetica, sans-serif;
 }
 
-.copyright small {
+.landing-page__footer .copyright small {
   font-family: 'Quicksand-Medium', Arial, Helvetica, sans-serif;
   line-height: 1.3;
   margin-top: 1em;
@@ -368,7 +368,7 @@ select::-ms-expand {
 }
 
 @media print, (min-width: 1001px) {
-  .copyright small {
+  .landing-page__footer .copyright small {
     margin-bottom: 1em;
   }
 }
@@ -586,9 +586,9 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .promotion__footer-flag {
@@ -608,6 +608,12 @@ select::-ms-expand {
   .promotion__footer-flag {
     width: 50%;
   }
+}
+
+.promotion__footer-cow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @media print, (min-width: 1001px) {
@@ -642,8 +648,9 @@ select::-ms-expand {
 
 .promotion__footer-diamond {
   margin-top: auto;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @media print, (min-width: 1001px) {
@@ -655,6 +662,40 @@ select::-ms-expand {
 @media only screen and (max-width: 1000px) {
   .promotion__footer-diamond {
     width: 20%;
+  }
+}
+
+.promotion__footer .copyright {
+  text-align: center;
+}
+
+@media print, (min-width: 1001px) {
+  .promotion__footer .copyright {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .promotion__footer .copyright {
+    font-size: 0.16rem;
+  }
+}
+
+.promotion__footer .copyright p {
+  font-family: 'Quicksand-Bold', Arial, Helvetica, sans-serif;
+}
+
+.promotion__footer .copyright small {
+  font-family: 'Quicksand-Medium', Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+  margin-top: 1em;
+  display: block;
+  white-space: nowrap;
+}
+
+@media print, (min-width: 1001px) {
+  .promotion__footer .copyright small {
+    margin-bottom: 1em;
   }
 }
 
