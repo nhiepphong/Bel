@@ -167,15 +167,6 @@ select::-ms-expand {
 .landing-page {
   min-height: 100vh;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -275,7 +266,7 @@ select::-ms-expand {
 
 @media print, (min-width: 1001px) {
   .landing-page__body {
-    height: 40vh;
+    height: 30vh;
     margin-top: 0.5rem;
   }
 }
@@ -318,8 +309,12 @@ select::-ms-expand {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  justify-self: flex-end;
-  margin-top: auto;
+}
+
+@media print, (min-width: 1001px) {
+  .landing-page__footer {
+    margin-top: 4vw;
+  }
 }
 
 .landing-page__footer-cow {
@@ -342,16 +337,16 @@ select::-ms-expand {
 
 @media print, (min-width: 1001px) {
   .landing-page__footer-bel {
-    width: 23.4375%;
-    margin-right: 3.33333%;
+    width: 26.04167%;
     margin-bottom: 30px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .landing-page__footer-bel {
-    width: 12%;
-    margin-right: 0.4rem;
+    width: 25%;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -690,7 +685,7 @@ select::-ms-expand {
 
 @media print, (min-width: 1001px) {
   .promotion__footer-bel {
-    width: 15.625%;
+    width: 23.4375%;
     margin-top: 0.35rem;
     margin-bottom: 0.3rem;
   }
