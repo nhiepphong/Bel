@@ -1,11 +1,12 @@
 .promotion{
     background: url(../image/pr-bg.jpg) repeat-y top center/ 100% auto;
+    overflow: hidden;
     &__header{
         display: flex;
-        padding: 0.2rem 0.4rem;
+        padding: 0.2rem 0.9rem;
         justify-content: space-between;
         align-items: center;
-        background:url(../image/header-bg1.svg) repeat-x top center/0.7rem auto,url(../image/header-bg2.svg) repeat-x bottom center/0.16rem auto,white;
+        background:url(../image/header-bg1.svg) repeat-x top center/1.25rem auto,url(../image/header-bg2.svg) repeat-x bottom center/0.28rem auto,white;
         &-back{
             @include PC{
                 width: percentage(355/1920);
@@ -20,7 +21,8 @@
         }
         &-logo{
             @include PC{
-                width: percentage(192/1920);
+                width: percentage(210/1920);
+                margin-top: 10px;
             }
             @include SP{
                 width:20%;
@@ -50,7 +52,7 @@
             padding:0.5rem 1rem 0.8rem;
         }
         @include PC{
-            padding: 1rem 1.8rem 1.4rem;
+            padding: 0.8rem 2.55rem 0.42rem;
         }
         &-heading{
             @include font-MonstroSolid;
@@ -58,6 +60,10 @@
             font-size: 5vw;
             text-align: center;
             margin-bottom: 1em;
+            @include PC{
+                font-size: 4.3vw;
+                margin-bottom: 0.5rem
+            }
         }
         &-inner{
             @include font-Quicksand-Medium;
@@ -66,7 +72,7 @@
             background: url(../image/paper-bg.png) repeat-y top center/ 100% auto;
             box-shadow: 4px 10px 20px rgba(#020202,0.8);
             @include PC{
-                padding: 1px 1.6rem 2rem;
+                padding: 1px 1.5rem 2rem;
                 font-size: 21px;
             }
             @include SP{
@@ -118,8 +124,9 @@
             position: relative;
             padding-bottom: 0.5rem;
             @include PC{
-                font-size: 3vw;
-                margin-top: 1rem;
+                font-size: 4.1vw;
+                margin-top: 0.6rem;
+                padding-bottom: 0.76rem;
             }
             @include SP{
                 font-size: 5vw;
@@ -133,6 +140,9 @@
                 bottom: 0;
                 width: 100%;
                 left: 0;
+                @include PC{
+                    font-size: 5.2vw
+                }
             }
         }
         &-subtitle{
@@ -141,7 +151,7 @@
             position: relative;
             
             @include PC{
-                font-size: 1.5vw;
+                font-size: 2.15vw;
                 margin-top: 0.5rem;
                 text-align: center;
                 padding-bottom: 0.5rem;
@@ -162,7 +172,7 @@
             margin-left: auto;
             margin-right: auto;
             @include PC{
-                width:40%;
+                width:34%;
             }
             @include SP{
                 width: 50%;
@@ -173,7 +183,8 @@
             bottom: 0;
             left: 0;
             @include PC{
-                width: percentage(240/1920);
+                width: 15.5%;
+                left: -1%;
             }
             @include SP{
                 width: 25%;
@@ -184,6 +195,8 @@
             margin-top:1rem;
             @include PC{
                 width: percentage(300/1920);
+                margin-top: 0.35rem;
+                margin-bottom: 0.3rem;
             }
             @include SP{
                 width: 12%;
@@ -196,7 +209,8 @@
             bottom: 0;
             right: 0;
             @include PC{
-                width: percentage(300/1920);
+                width: 19%;
+                right: 2.5%;
             }
             @include SP{
                 width: 20%;
