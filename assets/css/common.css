@@ -174,9 +174,8 @@ select::-ms-expand {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -187,6 +186,9 @@ select::-ms-expand {
 
 @media print, (min-width: 1001px) {
   .landing-page {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background: url(../image/lp-bg.jpg) no-repeat center/cover;
   }
 }
@@ -204,13 +206,13 @@ select::-ms-expand {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2.60417% 3.33333% 0;
+    padding: 2.08333% 3.33333% 0;
   }
 }
 
@@ -273,13 +275,23 @@ select::-ms-expand {
 
 @media print, (min-width: 1001px) {
   .landing-page__body {
-    height: 50vh;
+    height: 40vh;
+    margin-top: 0.5rem;
   }
 }
 
-@media (orientation: landscape) {
+@media only screen and (max-width: 1000px) {
+  .landing-page__body {
+    height: 30vh;
+    margin-top: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
   .landing-page__body {
     margin-top: 0.5rem;
+    height: 50vw;
+    margin-bottom: 10vw;
   }
 }
 
@@ -302,10 +314,18 @@ select::-ms-expand {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
+  justify-self: flex-end;
+  margin-top: auto;
+}
+
+.landing-page__footer-cow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @media print, (min-width: 1001px) {
@@ -322,8 +342,9 @@ select::-ms-expand {
 
 @media print, (min-width: 1001px) {
   .landing-page__footer-bel {
-    width: 4.89583%;
+    width: 23.4375%;
     margin-right: 3.33333%;
+    margin-bottom: 30px;
   }
 }
 
@@ -336,11 +357,6 @@ select::-ms-expand {
 
 .landing-page__footer .copyright {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 @media print, (min-width: 1001px) {
@@ -369,7 +385,13 @@ select::-ms-expand {
 
 @media print, (min-width: 1001px) {
   .landing-page__footer .copyright small {
-    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .landing-page__footer .copyright small {
+    padding-bottom: 0.5rem;
   }
 }
 
